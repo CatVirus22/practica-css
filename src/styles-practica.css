@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 30px;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 55.6%,
+    #e9f1fc 55.6%,
+    #e9f1fc 100%
+  );
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: grey;
+}
+
+#vaccine-logo {
+  display: inline-block;
+  width: 180px;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+
+#hoax {
+  border-radius: 5px;
+  background-color: rgb(40, 75, 231);
+  color: aliceblue;
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  box-shadow: 2px 4px 20px rgba(136, 136, 136, 0.8);
+}
+
+/* landing */
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 3em;
+  padding-left: 4.7em;
+  color: #1f3e72;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#arrow-down {
+  display: flex;
+  padding-left: 12.5em;
+}
+
+.subText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: gray;
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: 14.5em;
+  padding-top: 2em;
+}
+
+.features {
+  color: #2d4a7a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  padding-top: 3em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.features li {
+  text-decoration: none;
+  display: inline-block;
+}
+.colOne {
+  flex: 50%;
+}
+
+.colTwo {
+  flex-direction: row;
+  align-items: baseline;
+  flex: 50%;
+}
+
+.col2-ele {
+  justify-content: flex-end;
+  display: inline-block;
+  align-items: baseline;
+}
+
+#arrow-left {
+  align-items: baseline;
+}
+
+#nurse-photo {
+  height: 60vh;
+}
+
+.vax-list {
+  padding-top: 3em;
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .vax-list {
+    flex-direction: column;
+  }
+
+  .vax-list li {
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .colTwo {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}

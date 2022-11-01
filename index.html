@@ -7,6 +7,21 @@
     <title>Practica CSS</title>
 
     <link rel="stylesheet" href="src/styles-practica.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7a5badc389.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -14,6 +29,7 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/809/original/logo.png?1666474824"
           alt="vaccination-logo"
+          id="vaccine-logo"
         />
       </a>
       <ul class="nav-links">
@@ -21,8 +37,86 @@
         <li class="nav-item"><a href="#">Education</a></li>
         <li class="nav-item"><a href="#">News</a></li>
         <li class="nav-item"><a href="#">Regulation</a></li>
-        <li class="nav-item"><a href="#">RHoax Buster</a></li>
+        <li class="nav-item"><a id="hoax" href="#">Hoax Buster</a></li>
       </ul>
     </nav>
+    <section>
+      <div class="row">
+        <div class="colOne">
+          <div id="arrow-down">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/253/original/ApplicationFrameHost_zCzmr8EcE0.png?1666818838"
+              alt="arrow"
+            />
+          </div>
+          <h1>
+            Fight Virus <br />
+            with Vaccines
+          </h1>
+          <div class="subText" style="width: 750px">
+            Let's stop this pandemic by killing the virus with a vaccine,
+            <span>don't let yourself and your family get infected.</span>
+          </div>
+          <ul class="features">
+            <li><i class="fa-regular fa-shield-check"></i> Best protection</li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              Selected vacciones
+            </li>
+          </ul>
+          <form action="/action_page.php">
+            <label for="location">Location:</label>
+            <select name="location" id="location">
+              <option value="city">Jakarta Utara</option>
+            </select>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="colTwo">
+          <div class="col2-ele">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/269/original/ApplicationFrameHost_9ucv6Cr9No.png?1666824205"
+              alt="arrow"
+              id="arrow-left"
+            />
+          </div>
+          <div class="col2-ele">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/313/original/hfghfgh.jpg?1666843003"
+              alt="nurse-photo"
+              id="nurse-photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <ul class="vax-list">
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/316/original/ApplicationFrameHost_uMaAdRDMHr.png?1666854456"
+            alt="astra-seneka"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/317/original/ApplicationFrameHost_paIngL4fq6.png?1666854471"
+            alt="astra-seneka"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/318/original/ApplicationFrameHost_VoDUNxuB45.png?1666854481"
+            alt="astra-seneka"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/319/original/ApplicationFrameHost_3DcRE9KE9w.png?1666854492"
+            alt="astra-seneka"
+          />
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
