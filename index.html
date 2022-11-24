@@ -6,22 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica CSS</title>
 
-    <link rel="stylesheet" href="src/styles-practica.css" />
+    <link rel="stylesheet" href="src/styles.css" />
 
     <script
       src="https://kit.fontawesome.com/7a5badc389.js"
       crossorigin="anonymous"
     ></script>
-
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <nav class="navbar">
@@ -40,7 +30,7 @@
         <li class="nav-item"><a id="hoax" href="#">Hoax Buster</a></li>
       </ul>
     </nav>
-    <section>
+    <section id="landing">
       <div class="row">
         <div class="colOne">
           <div id="arrow-down">
@@ -58,19 +48,55 @@
             <span>don't let yourself and your family get infected.</span>
           </div>
           <ul class="features">
-            <li><i class="fa-regular fa-shield-check"></i> Best protection</li>
             <li>
-              <i class="fa-solid fa-star"></i>
-              Selected vacciones
+              <span class="bckgrnd"> <i class="fas fa-shield-virus"></i> </span
+              >Best protection
+            </li>
+            <li>
+              <span class="bckgrnd">
+                <i class="fas fa-star"></i>
+              </span>
+              <div class="fatureItem">Selected vaccines</div>
             </li>
           </ul>
-          <form action="/action_page.php">
-            <label for="location">Location:</label>
-            <select name="location" id="location">
-              <option value="city">Jakarta Utara</option>
-            </select>
-            <input type="submit" value="Submit" />
-          </form>
+          <div class="toggle" style="width: 750px">
+            <div class="tgglTtl" style="padding-left: 12.5em">
+              <span class="bckgrndTggl">
+                <i class="fas fa-clock"></i>
+              </span>
+              <h3>Schedule your vaccinatios</h3>
+            </div>
+          </div>
+          <div class="vaxForm">
+            <table class="list1">
+              <tr>
+                <td>
+                  <span class="bckgrndForm">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <div>Location</div>
+                </td>
+                <td>
+                  <span class="bckgrndForm">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  Date
+                </td>
+                <td>
+                  <span class="bckgrndForm">
+                    <i class="fas fa-syringe"></i>
+                  </span>
+                  Vaccine Type
+                </td>
+              </tr>
+              <tr class="list2">
+                <td>Jakarta Utara</td>
+                <td>08 July 2021</td>
+                <td>Moderna</td>
+              </tr>
+            </table>
+            <input type="submit" value="Submit" id="form-submit" />
+          </div>
         </div>
         <div class="colTwo">
           <div class="col2-ele">
@@ -90,7 +116,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="vax-list">
       <ul class="vax-list">
         <li>
           <img
@@ -118,5 +144,169 @@
         </li>
       </ul>
     </section>
+    <section id="text-blurbs">
+      <div class="second">
+        <h1>Why should I vaccine?</h1>
+        <div class="subText">
+          In order to avoid any doubts about getting the COVID-19 vaccine,
+          identify the following 4 benefits of COVID-19 vaccionation:
+        </div>
+        <div class="blurbs">
+          <div class="blurb">
+            <span class="bckgrndBlrb">
+              <i class="far fa-dot-circle"></i>
+            </span>
+            <h3>Minimize the spread of viruses</h3>
+            <p>
+              Vaccine has been proven effective to prevent someone from getting
+              infected with Coronavirus.
+            </p>
+          </div>
+          <div class="blurb">
+            <span class="bckgrndBlrb">
+              <i class="fas fa-shield-virus"></i>
+            </span>
+            <h3>Forming <br />antibodies</h3>
+            <p>
+              Covid-19 vaccine proven to help shape antibody response for inmune
+              system.
+            </p>
+          </div>
+          <div class="blurb">
+            <span class="bckgrndBlrb">
+              <i class="fas fa-users"></i>
+            </span>
+            <h3>Protecting people nearby</h3>
+            <p>
+              The benefits of COVID-19 vaccination are the vaccine that we get
+              can also protect peope around us.
+            </p>
+          </div>
+          <div class="blurb">
+            <span class="bckgrndBlrb">
+              <i class="fas fa-people-arrows"></i>
+            </span>
+            <h3>Creating group immunity</h3>
+            <p>
+              COVID-19 vaccination is also beneficial for creating group
+              inmmunity or herd community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vax-prep">
+      <div class="third">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/960/original/ApplicationFrameHost_FqTd6oDoVO.png?1669096281"
+          alt="vaccine-woman"
+          id="vax-woman"
+        />
+        <div class="contnt">
+          <h1>Peraparations Before Vaccine</h1>
+          <div class="subText">
+            The success of vaccines is strongly influenced by the strenght of
+            strength of the body's immune system. Therefore, there are several
+            things that can be be tried to make the COVID-19 vaccine work:
+          </div>
+          <div class="container">
+            <div class="toggles">
+              <div class="toggle">
+                <div class="tgglTtl">
+                  <span class="bckgrndTggl">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                  <h3>Avoid alcoholic beverages</h3>
+                </div>
+              </div>
+              <div class="toggle">
+                <div class="tgglTtl">
+                  <span class="bckgrndTggl">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                  <h3>Avoid stress</h3>
+                </div>
+                <p>
+                  Stress has a profound effect on immune work. Moreover,
+                  prolonged stress can increase cortisol production and
+                  oxidative stress in the body.
+                </p>
+              </div>
+              <div class="toggle">
+                <div class="tgglTtl">
+                  <span class="bckgrndTggl">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                  <h3>Eat healthy food</h3>
+                  <span class="tgglBtn">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="toggle">
+                <div class="tgglTtl">
+                  <span class="bckgrndTggl">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                  <h3>Get enough sleep</h3>
+                </div>
+              </div>
+              <div class="toggle">
+                <div class="tgglTtl">
+                  <span class="bckgrndTggl">
+                    <i class="fas fa-shield-virus"></i>
+                  </span>
+                  <h3>Exercise or physical activity</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="button-section"><div class="contact"></div></section>
+    <footer>
+      <div class="footrContnr">
+        <div class="footerInfo">
+          <h2 class="footerTitle">Vaccination</h2>
+          <p class="copyright">
+            Our goal is to help the world free from the ongoing pandemic
+          </p>
+        </div>
+        <div class="resources">
+          <table>
+            <tr>
+              <th>About</th>
+              <th>Company</th>
+              <th>Support</th>
+            </tr>
+            <tr>
+              <td>About Us</td>
+              <td>How we work?</td>
+              <td>FAQs</td>
+            </tr>
+            <tr>
+              <td>Features</td>
+              <td>Capital</td>
+              <td>Support Centre</td>
+            </tr>
+            <tr>
+              <td>News & Blog</td>
+              <td>Security</td>
+              <td>Contact Us</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="policy">
+        <p class="copyright">© 2021 Vaccination, All rights reserved</p>
+        <div class="terms">
+          <ul>
+            <li>Terms & Agreements</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
